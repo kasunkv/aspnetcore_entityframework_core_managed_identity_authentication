@@ -41,7 +41,7 @@ public class ToDoDbContextFactory : IDesignTimeDbContextFactory<BooksDbContext>
 	public BooksDbContext CreateDbContext(string[] args)
 	{
 		var configuration = new ConfigurationBuilder()
-				.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../AspNetCore.CRUD.Example.Web"))
+				.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../AspNetCore.EFCore.ManagedIdentity.Example.Web"))
 				.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
 				.Build();
 
